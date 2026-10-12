@@ -1,0 +1,149 @@
+/* Estilos generales */
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+    line-height: 1.5;
+}
+/* Barra de navegación con Flexbox */
+.navegacion {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 25px;
+    background-color: #245b85;
+}
+.marca {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+}
+.enlaces {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+.enlaces a {
+    color: white;
+    text-decoration: none;
+}
+.enlaces a:hover {
+    color: #c3e4ff;
+    text-decoration: underline;
+}
+main {
+    max-width: 1000px;
+    margin: 30px auto;
+    padding: 0 20px;
+}
+section {
+    margin-bottom: 30px;
+}
+/* Información del doctor */
+.perfil {
+    background-color: white;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+.nombre-doctor {
+    color: #245b85;
+    font-size: 28px;
+    margin-top: 0;
+}
+.especialidad {
+    color: #555;
+    font-size: 18px;
+}
+#descripcion {
+    margin: 20px 0;
+}
+.boton {
+    display: inline-block;
+    background-color: #246b9e;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+}
+.boton:hover {
+    background-color: #17476b;
+}
+h2 {
+    color: #245b85;
+    font-size: 22px;
+}
+.servicios {
+    padding-left: 20px;
+}
+.servicios > li {
+    margin-bottom: 8px;
+}
+/* Comentarios de pacientes y modelo de caja */
+.tarjetas {
+    display: flex;
+    gap: 20px;
+}
+.tarjeta {
+    flex: 1;
+    min-width: 0;
+    background-color: white;
+    padding: 20px;
+    margin: 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    text-align: center;
+}
+.tarjeta h3 {
+    font-size: 17px;
+}
+.tarjeta blockquote {
+    margin: 0 0 15px;
+}
+.tarjeta .fecha {
+    font-size: 13px;
+    color: #666;
+}
+.contacto {
+    background-color: #e0edf7;
+    padding: 20px;
+    text-align: center;
+    border-radius: 8px;
+}
+footer {
+    padding: 15px;
+    background-color: #245b85;
+    color: white;
+    text-align: center;
+}
+.nota {
+    font-size: 12px;
+}
+a:focus-visible {
+    outline: 3px solid #70b7eb;
+    outline-offset: 3px;
+}
+/* En celular, los comentarios se colocan uno debajo del otro */
+@media (max-width: 650px) {
+    .navegacion {
+        flex-direction: column;
+    }
+    .enlaces {
+        justify-content: center;
+        gap: 15px;
+    }
+    .tarjetas {
+        flex-direction: column;
+    }
+}
